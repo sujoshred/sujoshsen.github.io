@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #EEF2E6;
+}
+
+nav {
+  height: 80px;
+  width: 100%;
+  background-color: #3D8361;
+  padding: 20px 80px 20px 80px;
+  align-items: center;
+}
+
+/* .logo-cluster {
+  align-items: center;
+  padding: 5px;
+}
+
+.logo-img {
+  height: 40px;
+  width: 45px;
+  line-height: 40px;
+  padding: 5px;
+
+} */
+.logo {
+  color: #EEF2E6;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  line-height: 40px;
+  margin-left: 20px;
+}
+
+nav ul {
+  display: inline-block;
+  text-align: center;
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a:hover {
+  background-color: #D6CDA4;
+  color: black;
+  border-radius: 4px;
+}
+
+#check {
+  display: none;
+  cursor: pointer;
+}
+
+.check-btn {
+  font-size: 40px;
+  color: white;
+  float: right;
+  padding: 0px 20px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 950px) {
+  .check-btn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    margin: 0;
+    padding-top: 20px;
+    width: 100%;
+    height: 100vh;
+    background-color: #1C6758;
+    transition: all .5s;
+    left: -100%;
+  }
+
+  nav ul li {
+    display: block;
+    padding: 20px;
+  }
+
+  #check:checked~ul {
+    left: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  nav {
+    padding: 20px 30px;
+  }
+}
+
+section {
+  background: url(images/abst-backg.webp) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: calc(100vh - 80px);
+}
